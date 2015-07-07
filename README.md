@@ -1,5 +1,5 @@
 # requirejs-bootstrap
-Project Bootstrap for requirejs based web applications. Very minimistic!!!'s all 
+Project Bootstrap for requirejs based web applications. Very minimalistic!!!
 
 To start developing project simply type 
  
