@@ -1,9 +1,9 @@
-define(function (require) {
-
-    // var Foo = require("")
-
-	// your application starts here!
-    var content = document.querySelector("#content");
-    content.innerHTML = "<h1>Your App is running!</h1>";
-
+requirejs.config({
+    appDir: './',
+    baseUrl: './js/app',
+    paths :    {
+        lib: '../lib'
+    }
 });
+
+requirejs(["application"]);

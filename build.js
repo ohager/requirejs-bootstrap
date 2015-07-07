@@ -1,26 +1,23 @@
 // build configuration for requirejs optimizer
 {
     appDir: './',
-    baseUrl : './js',
+    baseUrl: './js/app',
     skipDirOptimize: true,
     removeCombined: true,
     optimizeCss: 'standard',
     fileExclusionRegExp: /^node_modules$/,
     waitSeconds : 0,
     paths : {
-        app: './app',
-        common: './app/common'
+        lib: '../lib'
     },
     dir: './dist',
-        modules : [
-            {
-                //module names are relative to baseUrl
-                name: 'app/common',
-                //List common dependencies here. Only need to list
-                //top level dependencies, "include" will find
-                //nested dependencies.
-                include: [
-                    ]
-            }
-        ]
+    modules :[
+        {
+            //module names are relative to baseUrl/paths config
+            name: 'main',
+            include: [
+                'main'
+            ]
+        }
+    ]
 }
